@@ -1,141 +1,109 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wisdom Hand Work</title>
-  <style>
-    body {
-      text-align: center;
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-    .products img {
-      width: 200px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #999;
-    }
-    video {
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px #999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisdom Hand Work</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f9f9f9, #d6e4f0);
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+        }
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 2em;
+            color: #333;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        header p {
+            margin: 5px 0 0;
+            color: #777;
+            font-size: 1em;
+        }
+        .background-section {
+            background: url('./images/ss.jpg') no-repeat center center/cover;
+            padding: 50px 0;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            gap: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
+            transform: perspective(1000px) rotateX(5deg);
+            transition: transform 0.5s;
+            width: 90%;
+            max-width: 400px;
+        }
+        .card:hover {
+            transform: perspective(1000px) rotateX(0deg) scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .card p {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+            color: #555;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
 </head>
 <body>
 
-  <h1></h1>
-  <p>
-  <!-- Logo -->
-  
+<header>
+    <img src="./images/sk.jpg" alt="Logo"> <!-- Product 3 as logo -->
+    <h1>Wisdom Hand Work</h1>
+    <p>Contact: +91 89615 08521</p>
+</header>
 
-  <!-- Products -->
-  
-  <div class="products">
-    <im…
-[9:44 pm, 25/4/2025] Akbr: <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wisdom Hand Work</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    .top-background {
-      background: url('images/ss.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 20px;
-      padding-bottom: 60px;
-    }
-    header img {
-      width: 80px;
-      height: auto;
-    }
-    .text-content h1 {
-      margin: 10px 0 0;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    }
-    .text-content p {
-      margin: 5px 0 20px;
-      color: #fff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    }
-    .gallery {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-    .gallery-item {
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 10px;
-      width: 200px;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .gallery-item p {
-      margin-top: 8px;
-      font-weight: bold;
-    }
-    .video-container {
-      margin-top: 30px;
-      padding: 20px;
-    }
-    video {
-      width: 80%;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-
-<div class="top-background">
-  <header>
-    <img src="images/sk.jpg" alt="WH Logo">
-    <div class="text-content">
-      <h1>Wisdom Hand Work</h1>
-      <p>Contact: +91 89615 08521</p>
+<div class="background-section">
+    <div class="gallery">
+        <div class="card">
+            <img src="./images/mk.jpg" alt="Product 1"> <!-- Old Logo as Product 1 -->
+            <p>Product 1</p>
+        </div>
+        <div class="card">
+            <img src="./images/pk.jpg" alt="Product 2">
+            <p>Product 2</p>
+        </div>
+        <div class="card">
+            <img src="./images/XC.jpg" alt="Product 5">
+            <p>Product 3</p>
+        </div>
     </div>
-  </header>
-
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="images/mk.jpg" alt="Product 1">
-      <p>Product 1</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/pk.jpg" alt="Product 2">
-      <p>Product 2</p>
-    </div>
-    <div class="gallery-item">
-      <img src="images/XC.jpg" alt="Product 3">
-      <p>Product 3</p>
-    </div>
-  </div>
-</div>
-
-<div class=
-  video controls autoplay muted loop playsinline>
-    
-    Your browser does not support the video tag.
-  </video>
 </div>
 
 </body>
